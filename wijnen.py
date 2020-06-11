@@ -11,7 +11,7 @@ from json import dumps
 from hashlib import sha224
 
 
-class wijnen:
+class Wijnen:
     def __init__(self, host: str, server_port: str, api_key: str = None):
         """ Creates connection object, containing host, port and api-key. Allows the user to connect to chosen
         web-server and retireve certain features
