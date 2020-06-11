@@ -12,10 +12,7 @@ setup(
   download_url = 'https://github.com/LexBosch/wijnen-client/archive/0.1.tar.gz',   
   keywords = ['wijnen', 'api', 'client'],   
   install_requires=[            
-          'concurrent',
           'requests',
-          'json',
-          'hashlib',  
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',    
