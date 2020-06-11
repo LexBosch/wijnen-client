@@ -3,13 +3,13 @@ from distutils.core import setup
 setup(
   name = 'wijnen',       
   packages = ['wijnen'],  
-  version = '0.1',     
+  version = '0.2',
   license='MIT',       
   description = 'Client to connect to the wijnen web-api',  
   author = 'Lex Bosch',                  
   author_email = 'lexbosch@live.nl',     
   url = 'https://github.com/LexBosch/wijnen-client', 
-  download_url = 'https://github.com/LexBosch/wijnen-client/archive/0.1.tar.gz',   
+  download_url = 'https://github.com/LexBosch/wijnen-client/archive/0.2.tar.gz',
   keywords = ['wijnen', 'api', 'client'],   
   install_requires=[            
           'requests',
