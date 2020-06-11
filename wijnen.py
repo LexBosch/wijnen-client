@@ -8,7 +8,6 @@ from concurrent.futures import wait
 from concurrent.futures.thread import ThreadPoolExecutor
 from requests import post
 from json import dumps
-from hashlib import sha224
 
 
 class Wijnen:
@@ -22,7 +21,7 @@ class Wijnen:
         """
         self.__server_adress = host
         self.__server_port = server_port
-        self.__api_key_hash = self.__get_api_hash(api_key)
+        self.__api_key_hash = api_key
 
     def get_attributes(self) -> dict:
         """ Gives database attributes to the user.
@@ -45,18 +44,6 @@ class Wijnen:
         """
         return_value = self.__mutli_call(variations, parameters)
         return return_value
-
-    @staticmethod
-    def __get_api_hash(api_key):
-        """ Hashes given string
-
-        :param api_key: String to hash
-        :return: hashed string or None
-        """
-        if api_key is not None:
-            return sha224(str.encode(api_key)).hexdigest()
-        else:
-            return None
 
     @staticmethod
     def __chunks(cutting_list: list, chunk_size: int) -> list:
