@@ -1,1 +1,1 @@
-from wijnen.wijnen import WijNen
+from wijnen.wijnen import Wijnen
